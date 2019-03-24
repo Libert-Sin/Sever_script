@@ -1,10 +1,44 @@
-·full_back
+· full_back
 
-시스템 전체 백업·롤백 스크립트
-~/backup/fbck 위치로 백업파일 저장.
-롤백시 ~/backup 위치에 원하는 백업파일 이동 후 롤백 스크립트 사용.
+시스템 전체 백업·롤백 스크립트.
+
+- full_backup.sh
+    ~/backup/fbck 위치로 백업파일 저장.
+
+- full_rollback.sh
+    ~/backup 위치에 원하는 백업파일 이동 후 사용.
 
 
 ----
 
 
+· site_back
+
+/var/www와 MYsql 백업·롤백 스크립트.
+
+- backup.sh
+    ~/backup/날짜bck 위치로 백업파일 생성.
+    스크립트의 DB관련 유저 · 암호 · DB이름 수정 후 사용.
+
+- rollback.sh
+    ~/backup/위치에 원하는 백업파일 이동 후 사용.
+    스크립트의 DB관련 유저 · 암호 · DB이름 수정 후 사용.
+    
+- clean.sh
+    ~/backup 내부의 모든 파일 삭제.
+    
+- autobackup.sh
+    이전 백업파일 삭제 후 백업을 진행하고 mega클라우드로 백업파일 업로드
+    backup.sh, clean.sh가 ~/sh에 위치해야 함.
+    megacmd가 설치 되어 있어야 함.
+    mega클라우드의 용량이 꽉 차면 업로드가 안되므로 클라우드 관리는 수동으로 해야 함.
+    
+    
+----
+
+
+·  wordpress_setting
+- wp_setting-mint(ubutu).sh
+    민트(우분투 기반 배포판)에서 워드프레스 서버 사전 셋팅 자동화.
+    스크립트의 DB관련 유저 · 암호 · DB이름 수정 후 사용.
+    
