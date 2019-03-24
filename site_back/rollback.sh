@@ -18,7 +18,7 @@ mysql -u유저 -pDB암호 -e "drop database DB이름;"
 
 mysql -u유저 -pDB암호 -e "create database DB이름;"
 
-sudo mysql -e "GRANT ALL PRIVILEGES ON DB이름.* TO DB계정명@localhost;"
+sudo mysql -e "GRANT ALL PRIVILEGES ON DB이름.* TO 유저@localhost;"
 
 sudo mysql -e "FLUSH PRIVILEGES;"
 
