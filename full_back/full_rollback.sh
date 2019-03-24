@@ -15,7 +15,7 @@ fi
 
 
 tar xvpfz backup*.tgz -C /
-mkdir proc
-mkdir lost+found
-mkdir mnt
-mkdir sys
+mkdir /proc
+mkdir /lost+found
+mkdir /mnt
+mkdir /sys
