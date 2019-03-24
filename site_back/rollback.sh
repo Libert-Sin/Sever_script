@@ -12,6 +12,8 @@ exit $E_NOTROOT
 fi
 
 
+
+
 mysql -u유저 -pDB암호 -e "drop database DB이름;"
 
 mysql -u유저 -pDB암호 -e "create database DB이름;"
