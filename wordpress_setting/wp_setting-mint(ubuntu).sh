@@ -27,7 +27,7 @@ sudo mysql_secure_installation
 
 
 sudo mysql -uroot -p암호 -e "CREATE DATABASE DB이름;"
-sudo mysql -uroot -p암호 -e "CREATE USER `유저`@`localhost` IDENTIFIED BY '암호';"
+sudo mysql -uroot -p암호 -e "CREATE USER '유저'@'localhost' IDENTIFIED BY '암호';"
 sudo mysql -uroot -p암호 -e "GRANT ALL ON DB이름.* TO `유저`@`localhost`;"
 sudo mysql -uroot -p암호 -e "FLUSH PRIVILEGES;"
 
