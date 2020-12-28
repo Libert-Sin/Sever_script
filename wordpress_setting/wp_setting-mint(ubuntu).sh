@@ -14,17 +14,9 @@ fi
 
 
 
-sudo apt install -y php-curl php-gd php-mbstring php-xml php-xmlrpc
-sudo apt install -y tasksel
-sudo tasksel install lamp-server
-
-
-
+sudo apt install -y apache2 apache2-utils php libapache2-mod-php php-mysql php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip mariadb-server mariadb-client
 
 sudo mysql_secure_installation
-
-
-
 
 sudo mysql -uroot -p암호 -e "CREATE DATABASE DB이름;"
 sudo mysql -uroot -p암호 -e "CREATE USER '유저'@'localhost' IDENTIFIED BY '암호';"
@@ -33,5 +25,3 @@ sudo mysql -uroot -p암호 -e "FLUSH PRIVILEGES;"
 
 
 
-
-sudo ufw allow in "Apache Full"
