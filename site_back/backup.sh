@@ -16,10 +16,9 @@ fi
 
 DATE=`date +"%Y%m%d%H%M%S"`
 
-mkdir ~/backup
-mkdir ~/backup/bck${DATE}
+mkdir /백업경로
 
-tar zcvf ~/backup/bck${DATE}/${DATE}_html.tar.gz /var/www
-sudo mysqldump -u유저 -p암호 DB이름 > ~/backup/bck${DATE}/${DATE}_DB이름.sql 
+tar zcvf /백업경로/bck${DATE}/${DATE}_html.tar.gz /웹페이지소스경로
+sudo mysqldump -u유저 -p암호 DB이름 > /백업경로/bck${DATE}/${DATE}_DB이름.sql 
 
-sudo chmod 755 -R ~/backup
+sudo chmod 755 -R ~/백업경로/
