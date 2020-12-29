@@ -22,11 +22,11 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON DB이름.* TO 유저@localhost;"
 
 sudo mysql -e "FLUSH PRIVILEGES;"
 
-mysql -u유저 -p암호 DB이름 < ~/backup/DB이름.sql
+mysql -u유저 -p암호 DB이름 < /백업경로/DB이름.sql
 
 
 sudo rm -rfv /var/www/*
-sudo tar -xvzf ~/backup/*html.tar.gz /var/www
+sudo tar -xvzf /백업경로/*html.tar.gz /var/www
 sudo chown -R www-data:www-data /var/www
 sudo chown -R apache:apache /var/www
 sudo chmod 755 -R /var/www/*
