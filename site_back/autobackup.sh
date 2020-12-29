@@ -20,11 +20,11 @@ sudo sh ~/sh/backup.sh
 
 
 
-megaget -u 메가가입메일 -p 암호 /Root/backupM --path /백업경로/backup/
+megaget -u 메가가입메일 -p 암호 /Root/backupM --path /백업경로/
 
 megals -u 메가가입메일 -p 암호 /Root/backupM | grep _ | xargs -d'\n' megarm -u 메가가입메일 -p 암호 
 
-megaput -u 메가가입메일 -p 암호 --path/Root/backupM  /백업경로/backup/*
+megaput -u 메가가입메일 -p 암호 --path/Root/backupM  /백업경로/*
 
 
 
